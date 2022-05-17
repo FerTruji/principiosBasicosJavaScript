@@ -1,0 +1,6 @@
+/*Podemos utilizar sweetalert para obtener alertas 
+
+1)En sweetalert copiamos el código
+2)Lo incertamos en un Script en nuestro html al final porque es un Script
+3) Podemos colocarlo dentro de un onClick="testSweetAlert()"
+4)Y creamos una función para hacer el llamado y utilizarla.*/

@@ -1,6 +1,6 @@
 //CALCULADORA:
 
-let num1 = Number(prompt('Ingrese un número'));
+/*let num1 = Number(prompt('Ingrese un número'));
 let op = prompt('Ingrese la operación que desea realizar');
 let num2 = Number(prompt('Ingrese el otro número'));
 
@@ -22,23 +22,34 @@ function calculadora(num1,num2,op){
             return 'Operación no válida';           
     }
 }
-console.log(calculadora(num1, num2, op));
+console.log(calculadora(num1, num2, op));*/
+
+
+
 
 
 //PIEDRA, PAPEL O TIJERA:
-
-const opciones =['piedra', 'papel', 'tijera'];
 
 function bot(){
     let jugada = Math.round(Math.random()*2);
     return jugada;
 };
-function player(){
+
+const opciones =['piedra', 'papel', 'tijera'];
+function jugar(player){
+    definicion(bot(),player);
+}
+
+
+/*function player(){
     let jugada = prompt('Ingrese: piedra, papel o tijera');
     jugada = opciones.indexOf(jugada);
     return jugada;
-};
+};       Para usar sin la funcion onClick*/
+
+
 function definicion(bot, player){
+    console.log('El BOT ha elegido: ${pociones [bot]}');
     switch (true){
         case bot===player:
             console.log('EMPATE');
